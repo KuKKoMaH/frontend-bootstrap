@@ -1,0 +1,37 @@
+html { position: relative; min-height: 100%; }
+
+body {
+  min-width: $content-width;
+  font-family: 'ubuntu';
+  margin: 0;
+  padding: 0;
+  padding-bottom: 70px;
+}
+* { box-sizing: border-box; }
+a { cursor: pointer; }
+
+.rouble {
+  font-weight: normal;
+  font-family: 'rouble';
+  display: inline;
+
+  &--normal:after {
+    content: 'o';
+    display: inline;
+  }
+
+  &--bold:after {
+    content: 'j';
+    display: inline;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  width: $content-width;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
