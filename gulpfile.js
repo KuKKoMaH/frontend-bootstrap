@@ -24,7 +24,6 @@ var path = {
     sprite      : 'src/images/sprites/*.png',
     fonts       : 'src/fonts/*'
 };
-var scripts = [];
 
 gulp.task('default', ['fonts', 'jade', 'sprite', 'images', 'style', 'load_js', 'js']);
 
@@ -53,7 +52,6 @@ gulp.task('watch', ['default'], function() {
     watch([js_build, 'src/blocks/**/*.js', 'src/js/**/*.js'], function() {
         gulp.run('js');
     });
-
 });
 
 gulp.task('style', function(){
