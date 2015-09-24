@@ -1,0 +1,191 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$footer-consult-name: 'footer-consult';
+$footer-consult-x: 606px;
+$footer-consult-y: 0px;
+$footer-consult-offset-x: -606px;
+$footer-consult-offset-y: 0px;
+$footer-consult-width: 521px;
+$footer-consult-height: 82px;
+$footer-consult-total-width: 1127px;
+$footer-consult-total-height: 989px;
+$footer-consult-image: '../images/sprite.png';
+$footer-consult: (606px, 0px, -606px, 0px, 521px, 82px, 1127px, 989px, '../images/sprite.png', 'footer-consult', );
+$footer-phone-name: 'footer-phone';
+$footer-phone-x: 606px;
+$footer-phone-y: 127px;
+$footer-phone-offset-x: -606px;
+$footer-phone-offset-y: -127px;
+$footer-phone-width: 44px;
+$footer-phone-height: 62px;
+$footer-phone-total-width: 1127px;
+$footer-phone-total-height: 989px;
+$footer-phone-image: '../images/sprite.png';
+$footer-phone: (606px, 127px, -606px, -127px, 44px, 62px, 1127px, 989px, '../images/sprite.png', 'footer-phone', );
+$form-btn-name: 'form-btn';
+$form-btn-x: 606px;
+$form-btn-y: 82px;
+$form-btn-offset-x: -606px;
+$form-btn-offset-y: -82px;
+$form-btn-width: 156px;
+$form-btn-height: 45px;
+$form-btn-total-width: 1127px;
+$form-btn-total-height: 989px;
+$form-btn-image: '../images/sprite.png';
+$form-btn: (606px, 82px, -606px, -82px, 156px, 45px, 1127px, 989px, '../images/sprite.png', 'form-btn', );
+$form-email-name: 'form-email';
+$form-email-x: 762px;
+$form-email-y: 82px;
+$form-email-offset-x: -762px;
+$form-email-offset-y: -82px;
+$form-email-width: 38px;
+$form-email-height: 26px;
+$form-email-total-width: 1127px;
+$form-email-total-height: 989px;
+$form-email-image: '../images/sprite.png';
+$form-email: (762px, 82px, -762px, -82px, 38px, 26px, 1127px, 989px, '../images/sprite.png', 'form-email', );
+$form-name-name: 'form-name';
+$form-name-x: 681px;
+$form-name-y: 127px;
+$form-name-offset-x: -681px;
+$form-name-offset-y: -127px;
+$form-name-width: 32px;
+$form-name-height: 30px;
+$form-name-total-width: 1127px;
+$form-name-total-height: 989px;
+$form-name-image: '../images/sprite.png';
+$form-name: (681px, 127px, -681px, -127px, 32px, 30px, 1127px, 989px, '../images/sprite.png', 'form-name', );
+$form-phone-name: 'form-phone';
+$form-phone-x: 606px;
+$form-phone-y: 189px;
+$form-phone-offset-x: -606px;
+$form-phone-offset-y: -189px;
+$form-phone-width: 29px;
+$form-phone-height: 32px;
+$form-phone-total-width: 1127px;
+$form-phone-total-height: 989px;
+$form-phone-image: '../images/sprite.png';
+$form-phone: (606px, 189px, -606px, -189px, 29px, 32px, 1127px, 989px, '../images/sprite.png', 'form-phone', );
+$header-phone-name: 'header-phone';
+$header-phone-x: 650px;
+$header-phone-y: 127px;
+$header-phone-offset-x: -650px;
+$header-phone-offset-y: -127px;
+$header-phone-width: 31px;
+$header-phone-height: 31px;
+$header-phone-total-width: 1127px;
+$header-phone-total-height: 989px;
+$header-phone-image: '../images/sprite.png';
+$header-phone: (650px, 127px, -650px, -127px, 31px, 31px, 1127px, 989px, '../images/sprite.png', 'header-phone', );
+$map-address-name: 'map-address';
+$map-address-x: 0px;
+$map-address-y: 0px;
+$map-address-offset-x: 0px;
+$map-address-offset-y: 0px;
+$map-address-width: 606px;
+$map-address-height: 292px;
+$map-address-total-width: 1127px;
+$map-address-total-height: 989px;
+$map-address-image: '../images/sprite.png';
+$map-address: (0px, 0px, 0px, 0px, 606px, 292px, 1127px, 989px, '../images/sprite.png', 'map-address', );
+$map-header-name: 'map-header';
+$map-header-x: 0px;
+$map-header-y: 439px;
+$map-header-offset-x: 0px;
+$map-header-offset-y: -439px;
+$map-header-width: 518px;
+$map-header-height: 116px;
+$map-header-total-width: 1127px;
+$map-header-total-height: 989px;
+$map-header-image: '../images/sprite.png';
+$map-header: (0px, 439px, 0px, -439px, 518px, 116px, 1127px, 989px, '../images/sprite.png', 'map-header', );
+$production-dots-name: 'production-dots';
+$production-dots-x: 0px;
+$production-dots-y: 555px;
+$production-dots-offset-x: 0px;
+$production-dots-offset-y: -555px;
+$production-dots-width: 8px;
+$production-dots-height: 434px;
+$production-dots-total-width: 1127px;
+$production-dots-total-height: 989px;
+$production-dots-image: '../images/sprite.png';
+$production-dots: (0px, 555px, 0px, -555px, 8px, 434px, 1127px, 989px, '../images/sprite.png', 'production-dots', );
+$production-gear-name: 'production-gear';
+$production-gear-x: 0px;
+$production-gear-y: 292px;
+$production-gear-offset-x: 0px;
+$production-gear-offset-y: -292px;
+$production-gear-width: 462px;
+$production-gear-height: 147px;
+$production-gear-total-width: 1127px;
+$production-gear-total-height: 989px;
+$production-gear-image: '../images/sprite.png';
+$production-gear: (0px, 292px, 0px, -292px, 462px, 147px, 1127px, 989px, '../images/sprite.png', 'production-gear', );
+$spritesheet-width: 1127px;
+$spritesheet-height: 989px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($footer-consult, $footer-phone, $form-btn, $form-email, $form-name, $form-phone, $header-phone, $map-address, $map-header, $production-dots, $production-gear, );
+$spritesheet: (1127px, 989px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

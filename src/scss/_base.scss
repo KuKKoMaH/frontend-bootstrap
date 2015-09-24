@@ -1,0 +1,26 @@
+html { position: relative; min-height: 100%; }
+
+body {
+  min-width: $content-width-min;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Verdana;
+}
+* { box-sizing: border-box; }
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+
+}
+
+.content-wrapper {
+  position: relative;
+  max-width: $content-width-max;
+  min-width: $content-width-min;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}

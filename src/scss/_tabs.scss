@@ -1,0 +1,42 @@
+.tabs {
+  overflow: hidden;
+
+  &__headers {
+    position: relative;
+    z-index: 1;
+    clear:fix;
+  }
+  &__header {
+    cursor: pointer;
+    float:left;
+    transition: all 0.2s ease-out;
+    &:hover {
+    }
+
+    &--active {
+      &:hover {
+      }
+    }
+  }
+
+  &__bodys {
+    position: relative;
+  }
+
+  &__body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+
+    &--active {
+      position: relative;
+      visibility: visible;
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+}
