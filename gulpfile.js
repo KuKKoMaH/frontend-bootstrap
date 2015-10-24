@@ -16,16 +16,18 @@ var cssGlobbing  = require('gulp-css-globbing');
 
 var js_build = 'src/js/build.json';
 var path = {
+    config      : 'config.json',
     jade        : ['src/*.jade', 'src/blocks/**/*.jade'],
     jade_layout : 'src/*.jade',
     script      : [],
     style       : ['src/scss/*.scss', 'src/blocks/**/*.scss'],
-    images      : 'src/images/images/*',
+    images      : 'src/images/images/**/*',
     sprite      : 'src/images/sprites/*.png',
     fonts       : 'src/fonts/*'
 };
+var config;
 
-gulp.task('default', ['fonts', 'jade', 'sprite', 'images', 'style', 'load_js', 'js']);
+gulp.task('default', ['fonts', 'load_config', 'jade', 'sprite', 'images', 'style', 'load_js', 'js']);
 
 gulp.task('watch', ['default'], function() {
     watch(path.fonts, function() {
@@ -47,6 +49,10 @@ gulp.task('watch', ['default'], function() {
 
     watch(js_build, function(){
         gulp.run('load_js')
+    });
+
+    watch(path.config, function(){
+        gulp.run('load_config')
     });
 
     watch([js_build, 'src/blocks/**/*.js', 'src/js/**/*.js'], function() {
@@ -95,6 +101,11 @@ gulp.task('load_js', function(){
     return path.script = js;
 });
 
+gulp.task('load_config', function(){
+    delete( require.cache[ __dirname + '/' + path.config ] );
+    return config = require('./' + path.config);
+});
+
 gulp.task('js', function () {
     return gulp.src(path.script)
         .pipe(plumber())
@@ -114,7 +125,8 @@ gulp.task('jade', function() {
     return gulp.src(path.jade_layout)
         .pipe(plumber())
         .pipe(jade({
-            pretty: true
+            pretty: true,
+            locals: config.data
         }))
         .pipe(gulp.dest('dist/'));
 });
