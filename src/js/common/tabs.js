@@ -28,8 +28,9 @@
     }
 
     function selectFirstTab(e, sel){
-        var $root = (sel)?$(sel):$body;
-        $root.find(".tabs__headers").find('.tabs__header').first().addClass('tabs__header--active');
-        $root.find(".tabs__bodys").find('.tabs__body').first().addClass('tabs__body--active');
+        var $root = (sel)?$(sel):$body,
+            $el = $root.find(".tabs__headers").find('.tabs__header').first(),
+            tab_id = $el.data('target');
+        showTab(tab_id, $el);
     }
 })();

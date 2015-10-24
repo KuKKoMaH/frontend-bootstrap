@@ -22,7 +22,6 @@
         }
     };
 
-    $(".input__phone").mask("+7 (999) 999-99-99");
     for(var form in forms) if(forms.hasOwnProperty(form)){
         (function(form_data){
             var selector = form_data.selector,
